@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/slider.css">
+    <title>Password Generator App by Adnan Ahsan</title>
+</head>
+<body>
+    <main class="pass-gen_container">
+        <div class="pass-gen_generate-pass-sec">
+            <h2>Generator a <br> <span class="clr-lgr">random password</span></h2>
+            <p class="insecure" >Never use an insecure password</p>
+			  <div class="result-contain">
+                <p id="password">PASSWORD</p>
+				<p id="result" data-placeholder="Generated password will show here."></p>
+				<div id="clipboard">
+					<img src="./assets/images/copy.png" alt="">
+					<p class="copy-text">COPY</p>
+				</div>
+			</div>
+            <button id="generate">Click to generate</button>
+		</div>
+			<p class="option-sec_label">
+				OPTIONS
+			</p>
+			<div class="options-sec">
+			
+			<p class="range-slider_label">
+				Range Slider
+			</p>	
+
+				<div class="slider">
+				<input type="range" id="length" min='4' max='20' value='20'  oninput="rangeValue.innerText = this.value">
+				<p id="rangeValue">20</p>
+				</div>
+
+				<p class="limit-indicate">
+					There's a limit of 20 on the range slider's maximum value.
+				</p>
+
+					<div class="settings">			
+				<div class="setting">
+					<input type="checkbox" id="uppercase" checked />
+					<label>Include uppercase letters</label> 
+				</div>
+				<div class="setting">
+					<input type="checkbox" id="lowercase" checked />
+					<label>Include lowercase letters</label> 
+				</div>
+				<div class="setting">
+					<input type="checkbox" id="numbers" checked />
+					<label>Include numbers</label> 
+				</div>
+				<div class="setting">
+					<input type="checkbox" id="symbols" checked />
+					<label>Include symbols</label> 
+				</div>
+	</div>
+
+				</div>
+			</div>
+    </main>
+       
+
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>

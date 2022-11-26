@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.pass-gen_container {
+    background-color: #000;
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Karla;
+    flex-direction: column;
+}
+
+.pass-gen_generate-pass-sec {
+    background-color: #1F2937;
+    margin: 0 30px;
+    width: 32%;
+    padding: 70px 52px 50px 52px;
+}
+
+.pass-gen_generate-pass-sec h2 {
+    font-size: 40px;
+    font-family: inherit;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+
+}
+
+.clr-lgr {
+    color: #2B8450;
+}
+
+.insecure {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    margin-bottom: 50px;
+    color: #D5D4D8;
+} 
+
+.pass-gen_generate-pass-sec button {
+    font-family: Inter;
+    font-weight: 500;
+    text-shadow: (0, 0, 0, 0.1) 100%;
+    margin-bottom: 35px;
+    background-color: #10B981;
+    border-radius: 6px;
+    padding: 9px 17px 9px 15px;
+    border: none;
+    color: #fff
+}
+
+/* Password Result Area */
+
+.result-contain {
+    display: flex;
+    align-items: flex-start;
+    background: #273549;
+    height: 84px;
+    width: 100%;
+    gap: 150px;
+    max-width:100%}
+
+#password {
+    color: #D5D4D8;
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 400;
+    padding: 8px 0px 0px 8px;
+}
+
+#result {
+    color: #D5D4D8;
+    margin: 0;
+    align-self: center;
+    font-size: 16px;
+    font-weight: 100;
+    color: #55F991;
+    font-family: Inter;
+    width: 100%;
+    text-align: center;
+}
+
+#result::placeholder {
+    color: white;;
+}
+
+p:empty:not(:focus)::before {
+  content: attr(data-placeholder);
+  color: #496182;
+  font-family: Inter;
+  font-size: 10px;
+  font-weight: 100
+}
+
+#clipboard {
+    display: flex;
+    cursor: pointer;
+    margin-left: 3px;
+}
+
+#clipboard img {
+    width: 10px;
+    height: 10px;
+    align-self: center;
+    margin-top: 8px;
+    margin-right: 4px;
+}
+
+#clipboard p {
+    color: #D5D4D8;
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 400;
+    padding: 8px 8px 0px 0px;
+    margin: 0;
+    align-self: flex-start;
+}
+
+#generate {
+    margin-top: 28px;
+    align-items: center;
+    width: 100%;
+    padding: 14px 160px;
+    background-color: #2B8450;
+}
+
+/* OPTIONS SEC - START */
+
+.option-sec_label {
+    padding: 22px 0;
+    color: #fff;
+    font-family: Montserrat;
+    background-color: #000;
+    width: 100%;
+    text-align: center;
+}
+
+.options-sec {
+    background-color: #1F2937;
+    width: 32%;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+.range-slider_label {
+    margin-top: 43px;
+    color: #fff;
+    padding: 16px 200px;
+    background-color: #273549;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    
+}
+
+.limit-indicate {
+    margin-top: 7px;
+    background-color: #273549;
+    color: #fff;
+    font-family: Inter;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.settings {
+        margin-bottom: 40px;
+
+}
+
+.setting {
+    background-color: #273549;
+    margin: 7px 0;
+    color: #fff;
+    padding: 20px 20px;
+    display: flex;
+    gap: 20px;
+}
+
+input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: #fff;
+  /* Not removed via appearance */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+    background-color: CanvasText;
+    transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+input[type="checkbox"]:focus {
+  outline: max(2px, 0.15em) solid currentColor;
+  outline-offset: max(2px, 0.15em);
+}
+
+:root {
+  --form-control-disabled: #959495;
+}
+
+input[type="checkbox"]:disabled {
+  --form-control-color: var(--form-control-disabled);
+
+  color: var(--form-control-disabled);
+  cursor: not-allowed;
+}
