@@ -279,4 +279,15 @@ input[type="checkbox"]:disabled {
     #result {
         font-size: 10px !important;
     }
+
+    .pass-gen_generate-pass-sec {
+        width: 50%;
+    }
+
+    .options-sec {
+        width: 50%;
+    }
+
+    p:empty:not(:focus)::before {
+    font-size: 8px;
 }
