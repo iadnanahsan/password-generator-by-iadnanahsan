@@ -262,7 +262,7 @@ input[type="checkbox"]:disabled {
 
     .slider input[type="range"] {
         margin-bottom: 20px;
-        width: 110px !important;
+        width: 160px !important;
     }
 
     .result-contain {
