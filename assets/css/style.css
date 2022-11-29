@@ -230,7 +230,7 @@ input[type="checkbox"]:disabled {
 }
 
 /* Media Queries */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 780px) {
     .pass-gen_generate-pass-sec h2 {
         font-size: 26px;
     }
