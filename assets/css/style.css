@@ -291,3 +291,23 @@ input[type="checkbox"]:disabled {
     p:empty:not(:focus)::before {
     font-size: 8px;
 }
+
+@media screen and (max-width: 600px) {
+     .slider input[type="range"] {
+        width: 100px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #result {
+        font-size: 12px;
+    }
+
+    .pass-gen_generate-pass-sec {
+        width: 40% !important;
+    }
+
+    .options-sec {
+        width: 40% !important;
+    }
+}
