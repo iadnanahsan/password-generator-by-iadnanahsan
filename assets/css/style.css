@@ -292,7 +292,7 @@ input[type="checkbox"]:disabled {
     font-size: 8px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 370px) {
      .slider input[type="range"] {
         width: 100px !important;
     }
