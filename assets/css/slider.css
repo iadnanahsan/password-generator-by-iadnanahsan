@@ -4,8 +4,7 @@
 height: 60px; */
 margin-top: 7px;
 margin-bottom: 7px;
-padding: 30px;
-padding-left: 40px;
+padding: 30px 30px !important;
 display: flex;
 align-items: center;
 background-color: #273549;
