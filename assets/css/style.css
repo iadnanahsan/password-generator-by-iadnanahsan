@@ -262,7 +262,7 @@ input[type="checkbox"]:disabled {
 
     .slider input[type="range"] {
         margin-bottom: 20px;
-        width: 160px !important;
+        width: 100% !important;
     }
 
     .result-contain {
@@ -292,11 +292,6 @@ input[type="checkbox"]:disabled {
     font-size: 8px;
 }
 
-@media screen and (max-width: 370px) {
-     .slider input[type="range"] {
-        width: 100px !important;
-    }
-}
 
 @media screen and (max-width: 768px) {
     #result {
@@ -304,10 +299,10 @@ input[type="checkbox"]:disabled {
     }
 
     .pass-gen_generate-pass-sec {
-        width: 40% !important;
+        width: 50% !important;
     }
 
     .options-sec {
-        width: 40% !important;
+        width: 50% !important;
     }
 }
